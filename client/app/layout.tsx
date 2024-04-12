@@ -8,8 +8,8 @@ import ThemeContextProvider from "@/context/theme-context";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Sanda Loncar | Digital Media Consultant",
-  description: "Sanda Loncar is a digital Media Consultant and Coach with extensive experience in the media industry.",
+  title: "Sanda Loncar | Digital Media Leadership",
+  description: "Sanda Loncar ist eine unabhängige Beraterin and Coachin aus Wien, Österreich – spezialisiert auf Digital Leadership in der Medienbranche.",
 };
 
 export default function RootLayout({
