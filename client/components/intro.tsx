@@ -112,6 +112,7 @@ export default function Intro() {
         </motion.div>
       </div>
       <div className="flex-col w-full justify-center items-center gap-4 flex pt-16 pb-16 md:pb-20 ">
+      <p className="text-xs font-semibold opacity-40">Teams & Personen dieser Unternehmen vertrauen mir:</p>
         <LogoSlider />
       </div>
     </section>
