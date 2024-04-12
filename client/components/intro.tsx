@@ -57,7 +57,7 @@ export default function Intro() {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          <span className="font-bold">Hallo, ich bin Sanda</span>. Unabhängige{" "}
+          <span className="font-bold">Hallo, ich bin Sanda</span>. Eine Unabhängige{" "}
           <span className="italic">Beraterin</span> und{" "}
           <span className="italic">Coachin</span>. Ich helfe Unternehmen und Produkteams {" "}
           <span className="underline">digital erfolgreich</span> zu sein.
