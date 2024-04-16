@@ -5,6 +5,9 @@ import SectionHeading from "./section-heading";
 import { skillsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
+import Leistungen from "./leistungen";
+import Testimonial from "./testimonial";
+import SectionDivider from "./section-divider";
 
 const fadeInAnimationVariants = {
   initial: {
@@ -21,32 +24,16 @@ const fadeInAnimationVariants = {
 };
 
 export default function Skills() {
-  const { ref } = useSectionInView("Expertise");
+  const { ref } = useSectionInView("Leistungen", 0.1);
 
   return (
     <section
-      id="skills"
+      id="leistungen"
       ref={ref}
-      className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-24"
+      className="mb-28 w-full max-w-7xl scroll-mt-28 sm:mb-24 flex flex-col items-center"
     >
-      <SectionHeading>Expertise</SectionHeading>
-      <ul className="flex flex-wrap justify-center gap-2 text-sm md:text-lg text-gray-800">
-        {skillsData.map((skill, index) => (
-          <motion.li
-            className="bg-white borderBlack rounded-xl px-4 py-2 md:px-5 md:py-3 dark:bg-white/10 dark:text-white/80"
-            key={index}
-            variants={fadeInAnimationVariants}
-            initial="initial"
-            whileInView="animate"
-            viewport={{
-              once: true,
-            }}
-            custom={index}
-          >
-            {skill}
-          </motion.li>
-        ))}
-      </ul>
+      <Leistungen />
+      <Testimonial />
     </section>
   );
 }

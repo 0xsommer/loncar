@@ -12,6 +12,24 @@ html {
   --line-color: #e5e7eb;
 }
 
+::selection {
+  @apply bg-white/80 text-black;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+html {
+  animation: fadeIn 5s;
+}
+
+
 html.dark {
   --line-color: rgba(255, 255, 255, 0.2);
 }
@@ -29,4 +47,26 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.article p {
+  @apply max-w-[60ch] text-lg leading-normal text-left;
+}
+
+.article ol {
+  list-style-type: decimal;
+  @apply max-w-[60ch] text-lg leading-normal text-left;
+}
+
+.article ul {
+  list-style-type: disc;
+  @apply max-w-[60ch] text-lg leading-normal text-left;
+}
+
+.article li {
+  @apply mt-2
+}
+
+.article h1 {
+  @apply text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100;
 }

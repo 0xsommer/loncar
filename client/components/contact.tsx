@@ -7,7 +7,7 @@ import { useSectionInView } from "@/lib/hooks";
 import { InlineWidget } from "react-calendly";
 
 export default function Contact() {
-  const { ref } = useSectionInView("Kontakt");
+  const { ref } = useSectionInView("Kontakt", 0.3);
 
   return (
     <motion.section
@@ -42,8 +42,6 @@ export default function Contact() {
         }}
         pageSettings={{
           backgroundColor: 'ffffff',
-          hideEventTypeDetails: false,
-          hideLandingPageDetails: false,
           primaryColor: '#000000',
           textColor: '4d5055',
         }}

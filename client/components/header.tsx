@@ -12,7 +12,7 @@ export default function Header() {
     useActiveSectionContext();
 
   return (
-    <header className="z-[99] fixed bottom-0 left-0 w-screen flex flex-col justify-center items-center bg-gradient-to-t from-white dark:from-gray-950 to-transparent pt-16 px-4">
+    <header className="z-[99] hidden fixed bottom-0 left-0 w-screen md:flex flex-col justify-center items-center bg-gradient-to-t from-white dark:from-gray-950 to-transparent pt-16 px-4">
       <motion.div
         className="border border-black border-opacity-10 bg-white bg-opacity-80 shadow-md shadow-black/[0.08] backdrop-blur-[0.5rem] max-w-xl rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75 justify-center items-center mb-6 md:mb-4 z-[100] w-full"
         initial={{ y: -100, opacity: 0 }}
@@ -45,7 +45,7 @@ export default function Header() {
 
                 {link.name === activeSection && (
                   <motion.span
-                    className="bg-gray-200 bg-opacity-60 rounded-full absolute inset-0 -z-10 dark:bg-gray-800 border border-gray-200"
+                    className="bg-gray-200 bg-opacity-60 rounded-full absolute inset-0 -z-10 dark:bg-gray-800 border border-gray-200/50"
                     layoutId="activeSection"
                     transition={{
                       type: "spring",

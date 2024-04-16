@@ -20,9 +20,9 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="h-screen max-h-dvh mb-28 max-w-3xl text-center sm:mb-0 scroll-mt-[100rem] items-center justify-between flex flex-col"
+      className="h-screen max-h-dvh mb-28 text-center sm:mb-0 scroll-mt-[100rem] items-center justify-between flex flex-col"
     >
-      <div className="flex flex-col h-full w-full gap-8 justify-center items-center pt-16 md:pt-16">
+      <div className="flex flex-col h-full w-full max-w-3xl gap-8 justify-center items-center pt-16 md:pt-16">
         <div className="flex items-center justify-center">
           <div id="avatar" className="relative group">
             <motion.div
@@ -43,26 +43,26 @@ export default function Intro() {
                 className="h-32 w-32 rounded-full object-cover border-[0.35rem] border-white shadow-xl object-right"
               />
             </motion.div>
-  
+
             <motion.span
-              className="absolute bottom-2 right-2 text-4xl group-hover:scale-150"
+              className="absolute bottom-2 right-2 text-4xl group-hover:scale-150 group-hover:rotate-6 transition-all duration-500 ease-in-out"
             >
               👋
             </motion.span>
           </div>
         </div>
-  
+
         <motion.h1
           className="mb-10 mt-8 px-4 text-2xl font-medium !leading-[1.5] sm:text-3xl"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          <span className="font-bold">Hallo, ich bin Sanda</span>. Eine Unabhängige{" "}
+          <span className="font-bold">Ich bin Sanda</span>. Als unabhängige{" "}
           <span className="italic">Beraterin</span> und{" "}
-          <span className="italic">Coachin</span>. Ich helfe Unternehmen und Produkteams {" "}
+          <span className="italic">Coachin</span> helfe ich Unternehmen und Produkteams {" "}
           <span className="underline">digital erfolgreich</span> zu sein.
         </motion.h1>
-  
+
         <motion.div
           className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4 text-lg font-medium"
           initial={{ opacity: 0, y: 100 }}
@@ -73,7 +73,7 @@ export default function Intro() {
         >
           <Link
             href="#contact"
-            className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+            className="group bg-gray-900 dark:bg-white/80 dark:text-black text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
             onClick={() => {
               setActiveSection("Kontakt");
               setTimeOfLastClick(Date.now());
@@ -82,7 +82,7 @@ export default function Intro() {
             Kontaktieren Sie mich{" "}
             <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
           </Link>
-  
+
           <a
             className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
             href="/CV.pdf"
@@ -91,7 +91,7 @@ export default function Intro() {
             Lebenslauf (PDF){" "}
             <HiDownload className="opacity-60 group-hover:translate-x-1 transition" />
           </a>
-  
+
           <div className="flex flex-row gap-4">
             <a
               className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
@@ -100,7 +100,7 @@ export default function Intro() {
             >
               <FaEnvelope />
             </a>
-    
+
             <a
               className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
               href="https://www.linkedin.com/in/thesandaloncar"
@@ -111,8 +111,8 @@ export default function Intro() {
           </div>
         </motion.div>
       </div>
-      <div className="flex-col w-full justify-center items-center gap-4 flex pt-16 pb-16 md:pb-20 ">
-      <p className="text-xs font-semibold opacity-40">Teams & Personen dieser Unternehmen vertrauen mir:</p>
+      <div className="flex-col w-screen justify-center items-center gap-4 flex pt-16 pb-16 md:pb-20 ">
+        <p className="text-xs font-semibold opacity-40">Teams & Personen dieser Unternehmen vertrauen mir:</p>
         <LogoSlider />
       </div>
     </section>
