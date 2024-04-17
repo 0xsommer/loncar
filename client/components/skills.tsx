@@ -33,7 +33,7 @@ export default function Skills() {
       className="mb-28 w-full max-w-7xl scroll-mt-28 sm:mb-24 flex flex-col items-center"
     >
       <Leistungen />
-      <Testimonial />
+      <div className="-mt-20"><Testimonial /></div>
     </section>
   );
 }
