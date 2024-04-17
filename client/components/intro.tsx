@@ -9,8 +9,7 @@ import { HiDownload } from "react-icons/hi";
 import { FaEnvelope } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
-import LogoSlider from "./LogoSlider";
-import SectionDivider from "./section-divider";
+import LogoSlider from "./logo-slider";
 
 export default function Intro() {
   const { ref } = useSectionInView("Start", 0.5);
@@ -20,9 +19,9 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="h-screen max-h-dvh mb-28 text-center sm:mb-0 scroll-mt-[100rem] items-center justify-between flex flex-col"
+      className="h-dvh md:h-screen mb-28 text-center sm:mb-0 scroll-mt-[100rem] items-center justify-between flex flex-col"
     >
-      <div className="flex flex-col h-full w-full max-w-3xl gap-8 justify-center items-center pt-16 md:pt-16">
+      <div className="flex flex-col h-full w-full max-w-3xl gap-4 md:gap-8 justify-center items-center pt-16 md:pt-16">
         <div className="flex items-center justify-center">
           <div id="avatar" className="relative group">
             <motion.div
@@ -53,7 +52,7 @@ export default function Intro() {
         </div>
 
         <motion.h1
-          className="mb-10 mt-8 px-4 text-2xl font-medium !leading-[1.5] sm:text-3xl"
+          className="mb-10 mt-8 px-4 text-xl font-medium !leading-[1.5] md:text-3xl"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
         >
@@ -73,7 +72,7 @@ export default function Intro() {
         >
           <Link
             href="#contact"
-            className="group bg-gray-900 dark:bg-white/80 dark:text-black text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+            className="group bg-gray-900 dark:bg-white/80 dark:text-black text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition whitespace-nowrap"
             onClick={() => {
               setActiveSection("Kontakt");
               setTimeOfLastClick(Date.now());
@@ -83,31 +82,33 @@ export default function Intro() {
             <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
           </Link>
 
-          <a
-            className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-            href="/CV.pdf"
-            download
-          >
-            Lebenslauf (PDF){" "}
-            <HiDownload className="opacity-60 group-hover:translate-x-1 transition" />
-          </a>
-
-          <div className="flex flex-row gap-4">
+          <div className="md:w-full flex flex-row gap-2">
             <a
-              className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-              href="mailto:sanda@sandaloncar.com"
-              target="_blank"
+              className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+              href="/CV.pdf"
+              download
             >
-              <FaEnvelope />
+              Lebenslauf (PDF){" "}
+              <HiDownload className="opacity-60 group-hover:translate-x-1 transition" />
             </a>
-
-            <a
-              className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-              href="https://www.linkedin.com/in/thesandaloncar"
-              target="_blank"
-            >
-              <BsLinkedin />
-            </a>
+  
+            <div className="flex flex-row gap-2 md:gap-4">
+              <a
+                className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+                href="mailto:sanda@sandaloncar.com"
+                target="_blank"
+              >
+                <FaEnvelope />
+              </a>
+  
+              <a
+                className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+                href="https://www.linkedin.com/in/thesandaloncar"
+                target="_blank"
+              >
+                <BsLinkedin />
+              </a>
+            </div>
           </div>
         </motion.div>
       </div>

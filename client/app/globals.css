@@ -13,7 +13,7 @@ html {
 }
 
 ::selection {
-  @apply bg-white/80 text-black;
+  @apply dark:bg-white/80 dark:text-black bg-black text-white;
 }
 
 @keyframes fadeIn {
@@ -49,22 +49,26 @@ body {
   }
 }
 
+.article h4 {
+  @apply text-lg mt-8;
+}
+
 .article p {
   @apply max-w-[60ch] text-lg leading-normal text-left;
 }
 
 .article ol {
   list-style-type: decimal;
-  @apply max-w-[60ch] text-lg leading-normal text-left;
+  @apply max-w-[60ch] text-lg leading-normal text-left mb-8;
 }
 
 .article ul {
   list-style-type: disc;
-  @apply max-w-[60ch] text-lg leading-normal text-left;
+  @apply max-w-[60ch] text-lg leading-normal text-left mb-8;
 }
 
 .article li {
-  @apply mt-2
+  @apply mt-2 ml-8;
 }
 
 .article h1 {

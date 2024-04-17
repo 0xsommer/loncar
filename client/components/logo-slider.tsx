@@ -7,7 +7,7 @@ const LogoSlider: React.FC = () => {
 
   return (
     <>
-      <div className="flex-col center w-full grayscale dark:invert flex px-4 md:px-28">
+      <div className="flex-col center w-full grayscale dark:invert flex px-2 md:px-28">
         <Marquee gradient={false} autoFill={true} pauseOnHover={true} gradientColor="#676394">
           <Image src="/logos/24sata.png" alt="24sata logo" width={100} height={100} className="ml-8 md:ml-20" loading="eager" />
           <Image src="/logos/styria.png" alt="styria logo" width={100} height={100} className="ml-8 md:ml-20" loading="eager" />

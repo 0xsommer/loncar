@@ -40,9 +40,9 @@ export const projectsData = [
     logo: "/logos/24sata.png",
     description:
       "From Zero to Hero: Als Geschäftsführerin von 24sata digital habe ich das Newsportal innerhalb von zwei Jahren zur dominanten Nummer eins im kroatischen Digitalmarkt gemacht.",
-    tags: ["Strategie", "Führung", "Digitalisierung", "Produktentwicklung"],
+    tags: ["Strategieentwicklung", "Strategieumsetzung", "Teamentwicklung", "Akquisition"],
     imageUrl: sata,
-    link: "/projects/24sata",
+    link: "projekte/24sata-strategie-case-study",
   },
   {
     title: "Futter",
@@ -51,7 +51,7 @@ export const projectsData = [
       "Gemeinsam mit einem jungen und motivierten Team habe ich ein internes Inkubationsprojekt zu einem Vorzeige-Produkt für eine junge Zielgruppe skaliert.",
     tags: ["Strategie", "Coaching", "Produktentwicklung", "Projektmanagement", "Hiring"],
     imageUrl: futter,
-    link: "/projects/futter",
+    link: "/projects/futter-strategie-case-study",
   },
 ] as const;
 

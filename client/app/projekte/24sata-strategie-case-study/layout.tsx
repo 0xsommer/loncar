@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Kleine Zeitung > Case Study > Sanda Loncar",
+  title: "24sata digital > Case Study > Sanda Loncar",
   description: "Sanda Loncar ist eine unabhängige Beraterin and Coachin aus Wien, Österreich – spezialisiert auf Digital Leadership in der Medienbranche.",
 };
 

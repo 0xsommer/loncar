@@ -17,7 +17,7 @@ export default function BlogArticle({
   return (
     <article className="flex flex-col gap-8">
       <div className="article flex flex-col gap-8">
-        <h3 className="flex items-center text-base text-zinc-900 dark:text-zinc-100"><span className="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span><span className="ml-3">Case Study</span></h3>
+        <h3 className="flex items-center text-base text-zinc-900 dark:text-zinc-100"><span className="h-4 w-0.5 rounded-full bg-zinc-500 dark:bg-zinc-500"></span><span className="ml-3">Case Study</span></h3>
         <h1>{title}</h1>
         <p>{intro}</p>
       </div>
