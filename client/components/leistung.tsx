@@ -26,7 +26,7 @@ const fadeInAnimationVariants = {
 const Leistung: React.FC<LeistungProps> = ({ title, description, items }) => {
     return (
         <div className="w-full h-dvh pt-[15vh] md:pt-[25vh]">
-            <div className="w-full h-min sticky top-[15dvh] md:top-[25vh] flex flex-col gap-8 bg-gray-50 p-8 rounded-2xl dark:text-black border border-gray-100 dark:border-gray-100/30 shadow">
+            <div className="w-full h-min sticky top-[15dvh] md:top-[25vh] flex flex-col gap-8 bg-white p-8 rounded-2xl dark:text-black border border-gray-100 dark:border-gray-100/30 shadow">
                 <h1
                     className="text-2xl font-medium !leading-[1.5] sm:text-3xl flex flex-row gap-4">
                     <span className="flex opacity-0 md:hidden">Strategien</span><span className="italic">{title}</span>
