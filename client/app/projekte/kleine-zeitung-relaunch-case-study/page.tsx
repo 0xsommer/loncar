@@ -27,7 +27,8 @@ const Article = () => {
                 imageUrl={firstArticle.imageUrl}
             />
             <div className="w-full flex flex-col gap-4 article">
-                <p>Nach über zehn Relaunch-Projekten mit unterschiedlichen Zeitungsmarken fand ich mit der Kleinen Zeitung das Rezept für ein stressreduziertes Relaunch-Projekt.</p>
+            <h4 className="font-bold">Kontext</h4>
+                <p>Die Medienlandschaft befindet sich bekannterweise in einem ständigen Wandel. Durch die digitale Transformation wird dieser Wandel noch verstärkt. Als Digital-Bereichsleiterin und Mitgliederin des Management Boards der Kleinen Zeitung war ich an der Front der Strategieentwicklung und - umsetzung. Das Ziel war, den Erfolg, den die Kleine Zeitung im Bereich Print erzielt hat, auch in der digitalen Welt zu gewährleisten.</p>
                 <p>Die Zutaten für den Erfolg waren:</p>
                 <ol>
                     <li>Produktstrategie erarbeiten und mit den Stakeholdern abstimmen</li>

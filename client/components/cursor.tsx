@@ -20,7 +20,7 @@ const Cursor = () => {
       cursorOutline?.animate({
         left: `${posX}px`,
         top: `${posY}px`
-      }, { duration: 800, fill: "forwards", easing: "ease-out" });
+      }, { duration: 500, fill: "forwards", easing: "ease-out" });
     };
   
     window.addEventListener("mousemove", updateCursor);
@@ -33,7 +33,7 @@ const Cursor = () => {
   return (
     <>
       <div
-        className="hidden md:block fixed top-0 left-0 z-[9999] rounded-full !w-5 !h-5 bg-gray-700 dark:bg-gray-400 pointer-events-none"
+        className="hidden md:block fixed top-0 left-0 z-[9999] rounded-full !w-4 !h-4 bg-gray-700 dark:bg-gray-400 pointer-events-none"
         data-cursor-dot
         style={{
           transform: `translate(-50%, -50%)`,
@@ -42,7 +42,7 @@ const Cursor = () => {
       </div>
       <div
         data-cursor-outline
-        className="hidden md:block fixed top-0 left-0 z-[9999] w-10 h-10 rounded-full border-2 border-gray-700 dark:border-gray-400 pointer-events-none bg-transparent"
+        className="hidden md:block fixed top-0 left-0 z-[9999] w-6 h-6 rounded-full border-2 border-gray-700 dark:border-gray-400 pointer-events-none bg-transparent"
         style={{
           transform: `translate(-50%, -50%)`,
         }}

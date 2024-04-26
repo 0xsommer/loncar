@@ -23,7 +23,7 @@ export default function Hamburger() {
         {isOpen ? <BsXLg /> : <BsList />} {/* Conditionally render icon */}
       </button>
       {isOpen && ( // Conditionally render navigation
-        <nav className="fixed bottom-0 pb-20 right-1 flex h-min p-2 w-full justify-end sm:py-0 z-40">
+        <nav className="fixed bottom-0 pb-20 right-2 flex h-min p-2 w-full justify-end sm:py-0 z-40">
           <ul className="flex w-min flex-col items-end justify-end font-medium text-gray-500 gap-3">
             {links.map((link) => (
               <motion.li

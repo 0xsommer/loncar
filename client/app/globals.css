@@ -34,11 +34,6 @@ html.dark {
   --line-color: rgba(255, 255, 255, 0.2);
 }
 
-
-body {
-  cursor: none;
-}
-
 .borderBlack {
   @apply border border-black/10;
 }
@@ -73,4 +68,29 @@ body {
 
 .article h1 {
   @apply text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100;
+}
+
+.blob {
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: linear-gradient(to right, aquamarine, mediumpurple);
+  animation: rotate 20s infinite;
+}
+
+.blur {
+  z-index: 2;
+  backdrop-filter: blur(10vmax);
+  @apply fixed w-screen h-screen;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg) translate(-50%, -50%);
+  }
+  50% {
+    transform: scale(1, 2) translate(-50%, -50%);
+  }
+  to {
+    transform: rotate(360deg) translate(-50%, -50%);
+  }
 }

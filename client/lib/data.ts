@@ -8,7 +8,7 @@ export const links = [
     hash: "/#home",
   },
   {
-    name: "Ansatz",
+    name: "About",
     hash: "/#about",
   },
   {
@@ -51,7 +51,7 @@ export const projectsData = [
       "Gemeinsam mit einem jungen und motivierten Team habe ich ein internes Inkubationsprojekt zu einem Vorzeige-Produkt für eine junge Zielgruppe skaliert.",
     tags: ["Strategie", "Coaching", "Produktentwicklung", "Projektmanagement", "Hiring"],
     imageUrl: futter,
-    link: "/projects/futter-strategie-case-study",
+    link: "/projekte/futter-kleine-zeitung-case-study",
   },
 ] as const;
 

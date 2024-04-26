@@ -21,7 +21,7 @@ export default function Intro() {
       id="home"
       className="h-dvh md:h-screen mb-28 text-center sm:mb-0 scroll-mt-[100rem] items-center justify-between flex flex-col"
     >
-      <div className="flex flex-col h-full w-full max-w-3xl gap-4 md:gap-8 justify-center items-center pt-16 md:pt-16">
+      <div className="flex flex-col h-full w-full max-w-3xl gap-4 md:gap-8 justify-center items-center pb-16">
         <div className="flex items-center justify-center">
           <div id="avatar" className="relative group">
             <motion.div
@@ -39,7 +39,7 @@ export default function Intro() {
                 height="192"
                 quality="95"
                 priority={true}
-                className="h-32 w-32 rounded-full object-cover border-[0.35rem] border-white shadow-xl object-right"
+                className="h-32 w-32 rounded-full object-cover border-[0.35rem] border-white ring-1 ring-zinc-200 shadow-xl object-right"
               />
             </motion.div>
 
@@ -56,10 +56,10 @@ export default function Intro() {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          <span className="font-bold">Ich bin Sanda</span>. Als unabhängige{" "}
-          <span className="italic">Beraterin</span> und{" "}
-          <span className="italic">Coachin</span> helfe ich Unternehmen und Produkteams {" "}
-          <span className="underline">digital erfolgreich</span> zu sein.
+          <span className="font-bold">Ich bin Sanda</span>. Als praxisorientierte{" "}
+          <span className="italic">Unternehmensberaterin</span> und systemische{" "}
+          <span className="italic">Coachin</span> helfe ich Ihnen, ihr Unternehmen {" "}
+          <span className="underline">erfolgreich</span> in die digitale Zukunft zu führen.
         </motion.h1>
 
         <motion.div
@@ -82,7 +82,7 @@ export default function Intro() {
             <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
           </Link>
 
-          <div className="md:w-full flex flex-row gap-2">
+          <div className="md:w-full flex flex-col md:flex-row gap-4 md:gap-2 items-center">
             <a
               className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
               href="/CV.pdf"
@@ -112,7 +112,8 @@ export default function Intro() {
           </div>
         </motion.div>
       </div>
-      <div className="flex-col w-screen justify-center items-center gap-4 flex pt-16 pb-16 md:pb-20 ">
+
+      <div className="flex-col w-screen justify-center items-center gap-4 hidden pt-16 pb-16 md:pb-20 ">
         <p className="text-xs font-semibold opacity-40">Teams & Personen dieser Unternehmen vertrauen mir:</p>
         <LogoSlider />
       </div>

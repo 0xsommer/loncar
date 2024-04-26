@@ -8,6 +8,8 @@ import Projects from "@/components/projects";
 import SectionDivider from "@/components/section-divider";
 import Skills from "@/components/skills";
 import Testimonial from "@/components/testimonial";
+import Blob from "@/components/blob";
+import SectionHeading from "@/components/section-heading";
 
 export default function Home() {
   return (
@@ -15,6 +17,7 @@ export default function Home() {
       <Intro />
       <SectionDivider />
       <About />
+      <SectionDivider />
       <Projects />
       <Skills />
       <SectionDivider />
