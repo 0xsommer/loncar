@@ -14,7 +14,7 @@ const Leistungen: React.FC<LeistungenProps> = ({ }) => {
                     <div className="hidden bg-[#12c2e9] absolute top-[4rem] -z-10 right-[8rem] h-[20.25rem] w-[31.25rem] rounded-full blur-[10rem] dark:bg-[#946263] opacity-30"></div>
                     <div className="hidden bg-[#FF8C00] bg-opacity-70 absolute top-[-1rem] -z-10 left-[15rem] h-[20.25rem] w-[50rem] rounded-full blur-[10rem] dark:bg-[#676394] opacity-60"></div>
                     <h1
-                        className="text-2xl font-medium !leading-[1.5] sm:text-3xl pt-[15vh] md:pt-[20vh]">
+                        className="text-2xl font-medium !leading-[1.5] sm:text-3xl pt-[15vh] md:pt-[20vh] dark:text-white">
                         Strategien
                     </h1>
                 </div>

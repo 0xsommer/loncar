@@ -73,7 +73,7 @@ html.dark {
 .blob {
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  background: linear-gradient(to right, aquamarine, mediumpurple);
+  background: linear-gradient(to right, #7fffd4, #9370d8);
   animation: rotate 20s infinite;
 }
 
