@@ -75,6 +75,7 @@ html.dark {
   border-radius: 50%;
   background: linear-gradient(to right, #7fffd4, #9370d8);
   animation: rotate 20s infinite;
+  @apply dark:opacity-40;
 }
 
 .blur {

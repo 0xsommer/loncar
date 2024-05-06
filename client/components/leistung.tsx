@@ -54,7 +54,7 @@ const Leistung: React.FC<LeistungProps> = ({ title, description, items }) => {
                     </ul>
                 </div>
                 <motion.div
-                className=" bg-gradient-to-r from-[#7fffd4]/50 to-[#9370d8]/50 h-2 w-full rounded-full overflow-clip mt-4"
+                className=" bg-gradient-to-r from-[#7fffd4]/50 to-[#9370d8]/50 h-1 w-full rounded-full overflow-clip mt-4"
                 style={{ scaleX: scrollYProgress }}
                 initial={{ scaleX: 0 }}
                 animate={{ scaleX: 1 }}
