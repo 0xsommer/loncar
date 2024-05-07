@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div className="w-full items-center justify-center flex flex-col pt-32 px-6">
+    <div className="w-full items-center justify-center flex flex-col py-32 px-6">
       <article className="w-full max-w-[60ch] items-center justify-center flex flex-col gap-16">
         <div className="article flex flex-col w-full gap-8">
           <h3 className="flex items-center text-base text-zinc-900 dark:text-zinc-100"><span className="h-4 w-0.5 rounded-full bg-zinc-500 dark:bg-zinc-500"></span><span className="ml-3">Informationspflicht</span></h3>

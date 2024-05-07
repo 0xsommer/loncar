@@ -18,7 +18,7 @@ export default function Intro() {
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   const { scrollYProgress } = useScroll();
 
-  const opacity = useTransform(scrollYProgress, [0, 0.065], [0.7, 0]);
+  const opacity = useTransform(scrollYProgress, [0, 0.065], [0.6, 0]);
   const translateY = useTransform(scrollYProgress, [0, 0.085], [0, 100]);
 
   return (
@@ -27,7 +27,7 @@ export default function Intro() {
       id="home"
       className="h-dvh md:h-screen mb-28 text-center sm:mb-0 scroll-mt-[100rem] items-center justify-between flex flex-col"
     >
-      <div className="flex flex-col h-full w-full max-w-3xl gap-4 md:gap-8 justify-center items-center pb-16">
+      <div className="flex flex-col h-full w-full max-w-3xl gap-4 justify-center items-center pb-16">
         <div className="flex items-center justify-center">
           <div id="avatar" className="relative group">
             <motion.div
@@ -45,12 +45,12 @@ export default function Intro() {
                 height="192"
                 quality="95"
                 priority={true}
-                className="h-32 w-32 rounded-full object-cover border-[0.35rem] border-white ring-1 ring-zinc-200 shadow-xl object-right"
+                className="h-28 w-28 rounded-full object-cover ring-4 ring-zinc-200 shadow-xl object-right"
               />
             </motion.div>
 
             <motion.span
-              className="absolute bottom-2 right-2 text-4xl group-hover:scale-150 group-hover:rotate-6 transition-all duration-500 ease-in-out"
+              className="absolute bottom-0 right-0 text-4xl group-hover:scale-150 group-hover:rotate-6 transition-all duration-500 ease-in-out"
             >
               👋
             </motion.span>
@@ -58,14 +58,14 @@ export default function Intro() {
         </div>
 
         <motion.h1
-          className="mb-10 mt-8 px-4 text-xl font-medium !leading-[1.5] md:text-3xl"
+          className="mb-10 mt-8 px-4 text-xl font-medium !leading-[1.5] md:text-2xl"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
         >
           <span className="font-bold">Ich bin Sanda</span>. Als praxisorientierte{" "}
-          <span className="italic">Unternehmensberaterin</span> und systemische{" "}
-          <span className="italic">Coachin</span> helfe ich Ihnen, ihr Unternehmen {" "}
-          <span className="underline">erfolgreich</span> in die digitale Zukunft zu führen.
+          <span className="">Unternehmensberaterin</span> und systemische{" "}
+          <span className="">Coachin</span> helfe ich Ihnen, ihr Unternehmen {" "}
+          <span className="">erfolgreich</span> in die digitale Zukunft zu führen.
         </motion.h1>
 
         <motion.div
@@ -117,8 +117,8 @@ export default function Intro() {
         delay: 0.1,
       }}
       style={{ opacity, translateY }}
-      className="flex flex-col gap-3 justify-center items-center pb-16 md:pb-32 opacity-80">
-        <p className="uppercase text-xs tracking-wider ">Scrollen</p>
+      className="flex flex-col gap-2 justify-center items-center pb-16 md:pb-28">
+        <p className="uppercase text-xs tracking-wider">Mehr erfahren</p>
         <motion.div
           animate={{ y: [0, 10, 0] }}
           transition={{
