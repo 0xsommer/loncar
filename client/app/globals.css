@@ -20,6 +20,7 @@ html {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -88,10 +89,27 @@ html.dark {
   from {
     transform: rotate(0deg) translate(-50%, -50%);
   }
+
   50% {
     transform: scale(1, 2) translate(-50%, -50%);
   }
+
   to {
     transform: rotate(360deg) translate(-50%, -50%);
   }
 }
+
+.grid-leistungen {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 400px 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  padding-bottom: 32px;
+}
+
+@media (max-width: 640px) {
+  .grid-leistungen {
+    grid-template-rows: 108px 1fr 1fr;
+  }
+}
+

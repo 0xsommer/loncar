@@ -25,9 +25,9 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="h-dvh md:h-screen mb-28 text-center sm:mb-0 scroll-mt-[100rem] items-center justify-between flex flex-col"
+      className="h-svh md:h-screen mb-28 text-center scroll-mt-[100rem] items-center justify-between flex flex-col z-20"
     >
-      <div className="flex flex-col h-full w-full max-w-3xl gap-4 justify-center items-center pb-0">
+      <div className="flex flex-col h-full w-full max-w-3xl gap-4 justify-start md:justify-center items-center pt-20 md:pt-0 pb-0">
         <div className="flex items-center justify-center">
           <div id="avatar" className="relative group">
             <motion.div
@@ -45,7 +45,7 @@ export default function Intro() {
                 height="192"
                 quality="95"
                 priority={true}
-                className="h-28 w-28 rounded-full object-cover ring-4 ring-zinc-200 shadow-xl object-right"
+                className="size-20 md:size-28 rounded-full object-cover ring-4 ring-zinc-200 shadow-xl object-right"
               />
             </motion.div>
 
@@ -59,7 +59,7 @@ export default function Intro() {
 
         <div className="flex flex-col gap-0 items-center justify-center">
           <motion.h1
-            className="mb-10 mt-8 px-4 text-xl font-medium !leading-[1.5] md:text-2xl max-w-xl"
+            className="mb-10 mt-8 px-4 text-lg font-medium !leading-[1.5] md:text-2xl max-w-xl"
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
           >
@@ -93,7 +93,7 @@ export default function Intro() {
   
               <div className="flex flex-row gap-2 md:gap-4">
                 <a
-                  className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+                  className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 dark:border-white/10"
                   href="mailto:sanda@sandaloncar.com"
                   target="_blank"
                 >
@@ -101,7 +101,7 @@ export default function Intro() {
                 </a>
   
                 <a
-                  className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+                  className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 dark:border-white/10"
                   href="https://www.linkedin.com/in/thesandaloncar"
                   target="_blank"
                 >
@@ -119,8 +119,8 @@ export default function Intro() {
         delay: 0.1,
       }}
       style={{ opacity, translateY }}
-      className="flex flex-col gap-2 justify-center items-center pb-16 md:pb-28">
-        <p className="uppercase text-xs text-[10px] tracking-wider">Mehr erfahren</p>
+      className="flex flex-col gap-2 justify-center items-center pb-8 md:pb-28">
+        <p className="hidden md:block uppercase text-xs text-[10px] tracking-wider">Mehr erfahren</p>
         <motion.div
           animate={{ y: [0, 10, 0] }}
           transition={{
