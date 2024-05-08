@@ -27,6 +27,8 @@ export default function Intro() {
       id="home"
       className="h-svh md:h-screen mb-28 text-center scroll-mt-[100rem] items-center justify-between flex flex-col z-20"
     >
+      <div className="md:hidden bg-[#12c2e9] absolute top-0 -z-10 left-0 size-32 rounded-full blur-[10rem] dark:bg-[#946263] opacity-60"></div>
+      <div className="md:hidden bg-[#c471ed] bg-opacity-70 absolute top-0 z-10 right-0 size-32 rounded-full blur-[10rem] dark:bg-[#676394]"></div>
       <div className="flex flex-col h-full w-full max-w-3xl gap-4 justify-start md:justify-center items-center pt-20 md:pt-0 pb-0">
         <div className="flex items-center justify-center">
           <div id="avatar" className="relative group">
