@@ -36,23 +36,11 @@ export default function About() {
 
       <div className="max-w-2xl flex flex-col gap-4 mt-8">
         <motion.p
-        key={1}
-        variants={fadeInAnimationVariants}
-        initial="initial"
-        whileInView="animate"
-        viewport={{ once: true }}
-        custom={1}
         className="mb-8">
           Mit über <span className="font-medium">zwei Jahrzehnten Führungserfahrung</span> in renommierten Medienunternehmen in Kroatien und Österreich unterstütze ich nun andere Unternehmen dabei, digital erfolgreich zu sein. Ich verknüpfe fundierte Kenntnisse in Organisationsentwicklung und systemischem Coaching mit meiner langjährigen praktischen Erfahrung. Diese Kombination ermöglicht es mir, komplexe Veränderungsprozesse effektiver zu gestalten und zu begleiten.
         </motion.p>
 
         <motion.p
-        key={2}
-        variants={fadeInAnimationVariants}
-        initial="initial"
-        whileInView="animate"
-        viewport={{ once: true }}
-        custom={2}
         className="mb-8">
           Ich habe erfolgreich digitale Strategien entwickelt und umgesetzt, die Wachstum der Reichweiten und Umsätze ermöglicht haben. Meine Expertise liegt in der <span className="font-medium">digitalen Transformation</span>, in der Entwicklung und Umsetzung innovativer Strategien und digitaler Produkte. In meiner Arbeitsweise setze ich stets auf einen praktischen und maßgeschneiderten Ansatz und integriere mich bei Bedarf nahtlos in die Teams meiner Kunden.
           </motion.p>

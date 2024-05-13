@@ -24,12 +24,12 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <body
-        className={`${inter.className} bg-white text-gray-950 relative dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
+        className={`${inter.className} bg-gray-50 text-gray-950 relative dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
       >
         <Blob />
 
-        <div className="hidden md:fixed left-0 top-0 h-screen w-2 md:w-28 ring-1 ring-zinc-100 bg-gray-100/60 dark:bg-black/20 dark:ring-zinc-300/20"/>
-        <div className="hidden md:fixed right-0 top-0 h-screen w-2 md:w-28 ring-1 ring-zinc-100 bg-gray-100/60 dark:bg-black/20 dark:ring-zinc-300/20"/>
+        <div className="fixed left-0 top-0 h-screen w-2 md:w-28 ring-1 ring-zinc-100 bg-gray-100/40 dark:bg-black/10 dark:ring-zinc-300/10"/>
+        <div className="fixed right-0 top-0 h-screen w-2 md:w-28 ring-1 ring-zinc-100 bg-gray-100/40 dark:bg-black/10 dark:ring-zinc-300/10"/>
         <Hamburger />
         <ThemeContextProvider>
           <ActiveSectionContextProvider>

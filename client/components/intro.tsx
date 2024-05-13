@@ -47,12 +47,18 @@ export default function Intro() {
                 height="192"
                 quality="95"
                 priority={true}
-                className="size-20 md:size-28 rounded-full object-cover ring-4 ring-zinc-200 shadow-xl object-right"
+                className="size-20 md:size-28 rounded-full object-cover ring-1 ring-zinc-200 border-4 border-white dark:ring-zinc-200 shadow-xl object-right"
               />
             </motion.div>
 
             <motion.span
               className="absolute bottom-0 right-0 text-4xl group-hover:scale-150 group-hover:rotate-6 transition-all duration-500 ease-in-out"
+              initial={{ opacity: 0, scale: 0 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{
+                type: "tween",
+                duration: 0.2,
+              }}
             >
               👋
             </motion.span>
