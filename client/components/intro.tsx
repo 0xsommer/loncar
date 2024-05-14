@@ -71,10 +71,7 @@ export default function Intro() {
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
           >
-            <span className="font-bold">Ich bin Sanda</span>. Als praxisorientierte{" "}
-            <span className="">Unternehmensberaterin</span> und systemische{" "}
-            <span className="">Coachin</span> helfe ich Ihnen, ihr Unternehmen {" "}
-            <span className="">erfolgreich</span> in die digitale Zukunft zu führen.
+            <span className="font-bold">Ich bin Sanda</span>. Eine Expertin mit über 20 Jahren Managementerfahrung in der Medienbranche. Als Beraterin helfe ich Ihrem journalistischen Unternehmen, digital zu wachsen – in dem Tempo, das Sie brauchen.
           </motion.h1>
   
           <motion.div

@@ -32,6 +32,7 @@ export default function Skills() {
       ref={ref}
       className="mb-28 w-full max-w-7xl scroll-mt-28 sm:mb-24 flex flex-col items-center"
     >
+      <div className="flex md:hidden"><SectionDivider /></div>
       <Leistungen />
       <div className="-mt-20"><Testimonial /></div>
     </section>

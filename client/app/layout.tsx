@@ -28,8 +28,8 @@ export default function RootLayout({
       >
         <Blob />
 
-        <div className="fixed left-0 top-0 h-screen w-2 md:w-28 ring-1 ring-zinc-100 bg-gray-100/40 dark:bg-black/10 dark:ring-zinc-300/10"/>
-        <div className="fixed right-0 top-0 h-screen w-2 md:w-28 ring-1 ring-zinc-100 bg-gray-100/40 dark:bg-black/10 dark:ring-zinc-300/10"/>
+        <div className="hidden md:block fixed left-0 top-0 h-screen w-2 md:w-28 ring-1 ring-zinc-100 bg-gray-100/40 dark:bg-black/10 dark:ring-zinc-300/10"/>
+        <div className="hidden md:block fixed right-0 top-0 h-screen w-2 md:w-28 ring-1 ring-zinc-100 bg-gray-100/40 dark:bg-black/10 dark:ring-zinc-300/10"/>
         <Hamburger />
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
