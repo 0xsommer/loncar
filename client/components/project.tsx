@@ -69,13 +69,8 @@ export default function Project({
         group-even:right-[initial] md:group-even:-left-40"
         />
 
-        <Link href={link} className="absolute top-0 left-0 w-full h-full bg-white/0 flex flex-col justify-center items-center group-hover:bg-white/50 dark:group-hover:bg-black/30 group-hover:backdrop-blur-sm transition-all duration-500  ease-in-out">
-          <div
-            className="w-min group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition text-nowrap opacity-0 group-hover:opacity-100"
-          >
-            Zur Case Study{" "}
-            <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
-          </div>
+        <Link href={link} className="absolute top-0 left-0 w-full h-full bg-white/0 flex flex-col justify-center items-center transition-all duration-500  ease-in-out">
+          
         </Link>
       </section>
     </motion.div>

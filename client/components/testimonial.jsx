@@ -2,7 +2,7 @@
 
 export default function Testimonial () {
   return (
-    <section className="py-12 bg-white/50 rounded-2xl overflow-hidden md:pb-20 md:pt-16 mb-16 md:mb-4 border border-black/5 dark:text-white dark:bg-black/30 ">
+    <section className="py-12 bg-white shadow rounded-2xl overflow-hidden md:pb-20 md:pt-16 mb-16 md:mb-4 border border-black/5 dark:border-white/20 dark:text-white dark:bg-black/30 ">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative">
           <img
