@@ -14,6 +14,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Sanda Loncar | Digital Media Leadership",
   description: "Sanda Loncar ist eine unabhängige Beraterin and Coachin aus Wien, Österreich – spezialisiert auf Digital Leadership in der Medienbranche.",
+  metadataBase: new URL('https://sandaloncar.com'),
 };
 
 export default function RootLayout({
