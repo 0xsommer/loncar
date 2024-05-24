@@ -4,7 +4,6 @@ import { Inter } from "next/font/google";
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import ThemeSwitch from "@/components/theme-switch";
 import ThemeContextProvider from "@/context/theme-context";
-import Cursor from "@/components/cursor";
 import BackButton from "@/components/back-button";
 import Hamburger from "@/components/hamburger";
 import Blob from "@/components/blob";
