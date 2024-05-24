@@ -2,7 +2,7 @@
 
 export default function Testimonial () {
   return (
-    <section className="py-12 bg-white shadow rounded-2xl overflow-hidden md:pb-20 md:pt-16 mb-16 md:mb-4 border border-black/5 dark:border-white/20 dark:text-white dark:bg-black/30 ">
+    <section className="py-8 bg-white shadow rounded-2xl overflow-hidden md:pb-20 md:pt-16 mb-16 md:mb-4 border border-black/5 dark:border-white/20 dark:text-white dark:bg-black/30 -mt-48 md:-mt-0">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative">
           <img
@@ -11,7 +11,7 @@ export default function Testimonial () {
             alt="Styria Media Group Logo"
           />
           <blockquote className="mt-8">
-            <div className="max-w-3xl mx-auto text-center text-lg leading-7 md:text-2xl md:leading-9 font-medium text-gray-900 dark:text-white px-4 md:px-16">
+            <div className="max-w-3xl mx-auto text-center text-base leading-7 md:text-2xl md:leading-9 font-medium text-gray-900 dark:text-white px-2 md:px-16">
               <p>
               &quot;Wir waren auf der Suche nach einem erfahrenen Partner, der uns in unserer digitalen Transformation unterstützen konnte. Sanda erwies sich als genau die Expertin, die wir brauchten. Wir sind heute besser positioniert, um den Herausforderungen einer digitalisierten Welt zu begegnen.&quot;
               </p>
