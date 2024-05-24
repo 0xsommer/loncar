@@ -27,7 +27,7 @@ const Article = () => {
                 />
                 <div className="w-full flex flex-col gap-4 article">
                     <h4 className="font-bold">Kontext</h4>
-                    <p>Anfang 2017 habe ich eine neue Aufgabe in der Mediengruppe Styria übernommen: Die Leitung des Bereichs “Digital".</p>
+                    <p>Anfang 2017 habe ich eine neue Aufgabe in der Mediengruppe Styria übernommen: Die Leitung des Bereichs &quot;Digital&quot;.</p>
                     <p>Dieser Bereich wurde nach der Integration der Online-Redaktion in den multimedialen Newsroom und der Einführung von Paid Content neu geschaffen. Die Leistung meiner Rolle wird an KPIs rund um Website-Traffic und digitalen Umsatz gemessen.
                         Nach der Übernahme war meine erste Priorität, die Performance der Produkte Website, Smartphone App und E-Paper zu analysieren und zu verbessern.
                     </p>
@@ -95,7 +95,7 @@ const Article = () => {
                     <p>
                         Bei großen und komplexen Herausforderungen wie der oben beschriebenen ist es wichtig, die Herausforderung in kleine Schritte zu unterteilen und mit den Grundlagen zu beginnen. </p>
                     <p>
-                        Neben der fachlichen Expertise sind das Verständnis für das Geschäft und gute Kommunikationsfähigkeiten des Data-Teams die Voraussetzung für den Erfolg. Effektive Datenprodukte können nur in enger Zusammenarbeit mit den Fachabteilungen entwickelt werden. Auf Managementebene war es mir wichtig, den Stakeholdern die Frage zu beantworten: "What's in it for me?
+                        Neben der fachlichen Expertise sind das Verständnis für das Geschäft und gute Kommunikationsfähigkeiten des Data-Teams die Voraussetzung für den Erfolg. Effektive Datenprodukte können nur in enger Zusammenarbeit mit den Fachabteilungen entwickelt werden. Auf Managementebene war es mir wichtig, den Stakeholdern die Frage zu beantworten: &quot;What&apos;s in it for me&quot;?
                     </p>
                 </div>
             </article>
