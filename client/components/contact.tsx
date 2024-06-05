@@ -33,7 +33,7 @@ export default function Contact() {
       <div className="w-full flex flex-col gap-4 pb-20 center">
         <p>Schicken Sie mir eine E-Mail oder buchen Sie gleich einen kostenlosen Termin:</p>
 
-        <a href="mailto:hi@sandaloncar.com" className="text-3xl md:text-7xl underline underline-offset-[1rem] md:underline-offset-[1.5rem] font-semibold">hi@sandaloncar.com</a>
+        <a href="mailto:sanda@sandaloncar.com" className="text-3xl md:text-7xl underline underline-offset-[1rem] md:underline-offset-[1.5rem] font-semibold">sanda@sandaloncar.com</a>
       </div>
 
       <InlineWidget

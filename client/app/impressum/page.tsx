@@ -22,7 +22,7 @@ export default function Home() {
             <p>Firmensitz: Wien</p>
           </div>
           <div className="w-full max-w-5xl  flex flex-col gap-1">
-            <p>hello@sandaloncar.com</p>
+            <p>sanda@sandaloncar.com</p>
           </div>
           <div className="w-full max-w-5xl  flex flex-col gap-1">
             <p>Mitglied bei: WKO</p>
