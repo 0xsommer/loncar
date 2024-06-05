@@ -73,7 +73,7 @@ export default function Intro() {
           >
             <span className="font-bold">Ich bin Sanda</span>. Eine Expertin mit über 20 Jahren Managementerfahrung in der Medienbranche. Als Beraterin helfe ich Ihrem journalistischen Unternehmen, digital zu wachsen – in dem Tempo, das Sie brauchen.
           </motion.h1>
-  
+
           <motion.div
             className="flex flex-col sm:flex-row items-center justify-center gap-6 px-4 text-lg font-medium"
             initial={{ opacity: 0, y: 100 }}
@@ -93,9 +93,9 @@ export default function Intro() {
               Kontaktieren Sie mich{" "}
               <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
             </Link>
-  
+
             <div className="md:w-full flex flex-col md:flex-row gap-6 md:gap-2 items-center">
-  
+
               <div className="flex flex-row gap-2 md:gap-4">
                 <a
                   className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 dark:border-white/10"
@@ -104,10 +104,10 @@ export default function Intro() {
                 >
                   <FaEnvelope />
                 </a>
-  
+
                 <a
                   className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 dark:border-white/10"
-                  href="https://www.linkedin.com/in/thesandaloncar"
+                  href="https://www.linkedin.com/in/sanda-loncar"
                   target="_blank"
                 >
                   <BsLinkedin />
@@ -118,13 +118,13 @@ export default function Intro() {
         </div>
       </div>
       <motion.div
-      initial={{ opacity: 0, y: 100 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{
-        delay: 0.1,
-      }}
-      style={{ opacity, translateY }}
-      className="flex flex-col gap-2 justify-center items-center pb-8 md:pb-28">
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.1,
+        }}
+        style={{ opacity, translateY }}
+        className="flex flex-col gap-2 justify-center items-center pb-8 md:pb-28">
         <p className="hidden md:block uppercase text-xs text-[10px] tracking-wider">Mehr erfahren</p>
         <motion.div
           animate={{ y: [0, 10, 0] }}
@@ -135,7 +135,7 @@ export default function Intro() {
             ease: "easeInOut"
           }}
         >
-          <MdKeyboardDoubleArrowDown size={18}/>
+          <MdKeyboardDoubleArrowDown size={18} />
         </motion.div>
       </motion.div>
 
