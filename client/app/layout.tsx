@@ -1,5 +1,6 @@
 import Header from "@/components/header";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react"
 import { Inter } from "next/font/google";
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import ThemeSwitch from "@/components/theme-switch";
@@ -26,9 +27,9 @@ export default function RootLayout({
       <body
         className={`${inter.className} bg-gray-50 text-gray-950 relative dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
       >
+        <Analytics />
         <Blob />
-
-        <div className="hidden md:block fixed left-0 top-0 h-screen w-2 md:w-28 ring-1 ring-zinc-100 bg-gray-100/40 dark:bg-black/10 dark:ring-zinc-300/10"/>
+        <div className="hidden md:block fixed left-0 top-0 h-screen w-2 md:w-28 ring-1 ring-zinc-100 bg-gray-100/40 dark:bg-black/10 dark:ring-zinc-3000/10"/>
         <div className="hidden md:block fixed right-0 top-0 h-screen w-2 md:w-28 ring-1 ring-zinc-100 bg-gray-100/40 dark:bg-black/10 dark:ring-zinc-300/10"/>
         <Hamburger />
         <ThemeContextProvider>
