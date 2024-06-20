@@ -63,8 +63,10 @@ const Paragraph = ({ paragraph = "Test" }: ParagraphProps) => {
                     {words.map((word, i) => {
                         const start = i / words.length;
                         const end = start + 1 / words.length;
+                        // Adjust the range for the first three words to start with full opacity
+                        const initialOpacity = i < 3 ? 1 : 0; // Assuming "In einer Zeit," are the first three words
                         return (
-                            <Word key={i} progress={scrollYProgress} range={[start, end]}>
+                            <Word key={i} progress={scrollYProgress} range={[start, end]} initialOpacity={initialOpacity}>
                                 {word}
                             </Word>
                         );
@@ -79,13 +81,14 @@ const Word = ({
     children,
     progress,
     range,
+    initialOpacity = 0
 }: {
     children: string;
     progress: any;
     range: any;
+    initialOpacity?: number;
 }) => {
-    const opacity = useTransform(progress, range, [0, 1]);
-
+    const opacity = useTransform(progress, range, [initialOpacity, 1]);
     return (
         <span className="mr-3 mt-3 relative">
             <span className="absolute opacity-10">{children}</span>
@@ -93,4 +96,3 @@ const Word = ({
         </span>
     );
 };
-
