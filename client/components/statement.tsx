@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { HiDownload } from "react-icons/hi";
 
@@ -11,26 +11,7 @@ const Statement: React.FC = () => {
         offset: ["start start", "end end"],
     });
 
-    const [paragraphDistance, setParagraphDistance] = React.useState(-50);
-    React.useEffect(() => {
-        const handleResize = () => {
-            const viewportHeight = window.innerHeight;
-            const maxDistance = -250;
-            const minDistance = -50;
-            const range = 2500;
-            const interpolatedValue = Math.max(minDistance, Math.min(maxDistance, minDistance + (viewportHeight - 0) * (maxDistance - minDistance) / (range - 0)));
-            setParagraphDistance(interpolatedValue);
-        };
-        handleResize();
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
-    }, []);
-
-    React.useEffect(() => {
-        console.log("paragraphDistance:", paragraphDistance);
-    }, [paragraphDistance]);
-
-    const y = useTransform(scrollYProgress, [0.7, 0.8], [0, paragraphDistance]);
+    const y = useTransform(scrollYProgress, [0.7, 0.8], [0, -150]);
 
     return (
         <section
@@ -41,7 +22,7 @@ const Statement: React.FC = () => {
                 <Paragraph paragraph="In einer Zeit, in der digitale Giganten den Ton angeben, glaube ich fest daran, dass journalistische Unternehmen ebenso erfolgreich sein können – und sogar müssen. Denn sie haben einen wichtigen gesellschaftlichen Auftrag zu erfüllen. Mein Ziel ist es, diese Überzeugung in die Tat umzusetzen und das nachhaltige digitale Wachstum journalistischer Medien zu unterstützen." />
                 <motion.div
                     style={{ y: y }}
-                    className="w-full flex flex-col gap-8 max-w-md items-center justify-center text-center px-4 md:px-0">
+                    className="w-full flex flex-col gap-8 max-w-md items-center justify-center text-center px-4 md:px-0 pt-40 md:pt-0">
                     <p className="">Mit meiner einzigartigen Kombination aus Fachwissen stehe ich bereit, Sie auf Ihrem Weg zum Erfolg zu begleiten. Ich baue auf meinem reichen Erfahrungsschatz in der digitalen Transformation und Entwicklung innovativer digitaler Strategien.</p>
                     <p className="">In meiner Arbeitsweise setze ich stets auf einen praktischen und maßgeschneiderten Ansatz und integriere mich bei Bedarf nahtlos in die Teams meiner Kunden, um gemeinsam nachhaltige Erfolge zu erzielen.</p>
                     <motion.a
