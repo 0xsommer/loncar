@@ -49,7 +49,7 @@ const Paragraph = ({ paragraph = "Test" }: ParagraphProps) => {
     const container = useRef(null);
     const { scrollYProgress } = useScroll({
         target: container,
-        offset: ["start start", "end end"],
+        offset: ["start end", "end end"],
     });
 
     const words = paragraph.split(" ");
