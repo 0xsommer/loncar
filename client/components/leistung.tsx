@@ -16,7 +16,7 @@ type LeistungProps = {
 const fadeInAnimationVariants = {
     initial: {
         opacity: 0,
-        y: 100,
+        y: 10,
     },
     animate: (index: number) => ({
         opacity: 1,
@@ -52,12 +52,8 @@ const Leistung: React.FC<LeistungProps> = ({ title, description, items, index, r
                         <ul className="flex flex-wrap gap-2 sm:mt-auto">
                             {items.map((item, index) => (
                                 <motion.li
-                                    className="bg-black/60 ring-1 ring-white/10 px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
+                                    className="bg-black/5 ring-1 ring-black/10 px-3 py-1 text-[0.6rem] uppercase tracking-wider rounded-full text-black"
                                     key={index}
-                                    variants={fadeInAnimationVariants}
-                                    initial="initial"
-                                    whileInView="animate"
-                                    viewport={{ once: true }}
                                     custom={index}
                                 >
                                     {item}

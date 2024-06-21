@@ -33,12 +33,13 @@ export default function Contact() {
       <div className="w-full flex flex-col gap-4 pb-20 center">
         <p>Schicken Sie mir eine E-Mail oder buchen Sie gleich einen kostenlosen Termin:</p>
 
-        <a href="mailto:sanda@sandaloncar.com" className="text-3xl md:text-7xl underline underline-offset-[1rem] md:underline-offset-[1.5rem] font-semibold">sanda@sandaloncar.com</a>
+        <a href="mailto:sanda@sandaloncar.com" className="text-2xl md:text-6xl underline underline-offset-[1rem] md:underline-offset-[1.5rem] font-semibold">sanda@sandaloncar.com</a>
       </div>
 
       <InlineWidget
         styles={{
-          height: '920px',
+          height: '984px',
+          overflow: 'hidden'
         }}
         pageSettings={{
           backgroundColor: 'ffffff',

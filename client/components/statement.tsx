@@ -3,25 +3,31 @@
 import React, { useRef, useEffect, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { HiDownload } from "react-icons/hi";
+import { useSectionInView } from "@/lib/hooks";
 
 const Statement: React.FC = () => {
     const statementRef = useRef(null);
+    const { ref } = useSectionInView("About", 0.3);
     const { scrollYProgress } = useScroll({
         target: statementRef,
         offset: ["start start", "end end"],
     });
 
-    const y = useTransform(scrollYProgress, [0.7, 0.8], [0, -150]);
+    const y = useTransform(scrollYProgress, [0.7, 0.8], [-100, -150]);
+    const opacity = useTransform(scrollYProgress, [0.75, 0.8], [0, 1]);
 
     return (
         <section
             className="h-full w-full text-black dark:text-white flex flex-col gap-8 pb-32 md:-mt-[40svh] -mt-[20svh] max-w-3xl items-center justify-center -mb-[200px]"
             ref={statementRef}
+            id="about"
         >
-            <div className="flex flex-col gap-0 items-center">
+            <div 
+            ref={ref}
+            className="flex flex-col gap-0 items-center">
                 <Paragraph paragraph="In einer Zeit, in der digitale Giganten den Ton angeben, glaube ich fest daran, dass journalistische Unternehmen ebenso erfolgreich sein können – und sogar müssen. Denn sie haben einen wichtigen gesellschaftlichen Auftrag zu erfüllen. Mein Ziel ist es, diese Überzeugung in die Tat umzusetzen und das nachhaltige digitale Wachstum journalistischer Medien zu unterstützen." />
                 <motion.div
-                    style={{ y: y }}
+                    style={{ y: y, opacity: opacity }}
                     className="w-full flex flex-col gap-8 max-w-md items-center justify-center text-center px-4 md:px-0 pt-40 md:pt-0">
                     <p className="">Mit meiner einzigartigen Kombination aus Fachwissen stehe ich bereit, Sie auf Ihrem Weg zum Erfolg zu begleiten. Ich baue auf meinem reichen Erfahrungsschatz in der digitalen Transformation und Entwicklung innovativer digitaler Strategien.</p>
                     <p className="">In meiner Arbeitsweise setze ich stets auf einen praktischen und maßgeschneiderten Ansatz und integriere mich bei Bedarf nahtlos in die Teams meiner Kunden, um gemeinsam nachhaltige Erfolge zu erzielen.</p>

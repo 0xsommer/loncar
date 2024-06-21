@@ -11,11 +11,11 @@ export default function Testimonial () {
             alt="Styria Media Group Logo"
           />
           <blockquote className="mt-8">
-            <div className="max-w-3xl mx-auto text-center text-base leading-7 md:text-2xl md:leading-9 font-medium text-gray-900 dark:text-white px-2 md:px-16">
+            <div className="max-w-3xl mx-auto text-center text-sm leading-6 md:text-2xl md:leading-9 font-medium text-gray-900 dark:text-white md:px-16">
               <p>
-              &quot;Sanda ist ein Digital Native der ersten Stunde und hat die digitale Transformation der Styria Media Group maßgeblich mitgestaltet.</p>
+              Sanda ist ein Digital Native der ersten Stunde und hat die digitale Transformation der Styria Media Group maßgeblich mitgestaltet.</p>
               
-              <p className="mt-8">Nach dem Relaunch der Website von vecernji.hr list hat Sanda 24sata.hr zur klaren Nummer 1 unter den Nachrichtenportalen in Kroatien gemacht. Es war nur logisch, dass sie in ihrer führenden Rolle im Digitalteam der Kleinen Zeitung auch die Zahlen der Website und der App auf neue Rekordhöhen treiben konnte.&quot;
+              <p className="mt-8">Nach dem Relaunch der Website von vecernji.hr list hat Sanda 24sata.hr zur klaren Nummer 1 unter den Nachrichtenportalen in Kroatien gemacht. Es war nur logisch, dass sie in ihrer führenden Rolle im Digitalteam der Kleinen Zeitung auch die Zahlen der Website und der App auf neue Rekordhöhen treiben konnte.;
               </p>
             </div>
             <footer className="mt-10">
