@@ -11,7 +11,7 @@ export default function Testimonial () {
             alt="Styria Media Group Logo"
           />
           <blockquote className="mt-8">
-            <div className="max-w-3xl mx-auto text-center text-sm leading-6 md:text-2xl md:leading-9 font-medium text-gray-900 dark:text-white md:px-16">
+            <div className="max-w-3xl mx-auto text-center text-sm leading-6 md:text-xl md:leading-9 font-medium text-gray-900 dark:text-white md:px-16">
               <p>
               Sanda ist ein Digital Native der ersten Stunde und hat die digitale Transformation der Styria Media Group maßgeblich mitgestaltet.</p>
               

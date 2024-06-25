@@ -47,7 +47,7 @@ export default function Intro() {
                 height="192"
                 quality="95"
                 priority={true}
-                className="size-20 md:size-28 rounded-full object-cover ring-1 ring-zinc-200 border-4 border-white dark:ring-zinc-200 shadow-xl object-right"
+                className="size-20 md:size-28 rounded-full object-cover ring-1 ring-zinc-200 border-4 border-white dark:ring-zinc-200 shadow-xl object-right intro-image"
               />
             </motion.div>
 
@@ -67,7 +67,7 @@ export default function Intro() {
 
         <div className="flex flex-col gap-0 items-center justify-center">
           <motion.h1
-            className="mb-10 mt-8 px-4 text-lg font-medium !leading-[1.5] md:text-2xl max-w-2xl"
+            className="mb-10 mt-8 px-4 text-lg font-medium !leading-[1.5] md:text-2xl max-w-2xl intro-text"
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
           >
@@ -84,7 +84,7 @@ export default function Intro() {
           >
             <Link
               href="/#contact"
-              className="group bg-gray-900 dark:bg-white/80 dark:text-black text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition whitespace-nowrap"
+              className="group bg-gray-900 dark:bg-white/80 dark:text-black text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition whitespace-nowrap intro-button"
               onClick={() => {
                 setActiveSection("Kontakt");
                 setTimeOfLastClick(Date.now());
@@ -98,7 +98,7 @@ export default function Intro() {
 
               <div className="flex flex-row gap-2 md:gap-4">
                 <a
-                  className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 dark:border-white/10"
+                  className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 dark:border-white/10 intro-pill"
                   href="mailto:sanda@sandaloncar.com"
                   target="_blank"
                 >
@@ -106,7 +106,7 @@ export default function Intro() {
                 </a>
 
                 <a
-                  className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 dark:border-white/10"
+                  className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 dark:border-white/10 intro-pill"
                   href="https://www.linkedin.com/in/sanda-loncar"
                   target="_blank"
                 >

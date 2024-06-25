@@ -65,7 +65,7 @@ const Paragraph = ({ paragraph = "Test" }: ParagraphProps) => {
             className="h-[300svh] w-full px-2 md:px-8"
         >
             <div className="flex h-[100svh] w-full sticky top-0">
-                <div className="w-full self-center flex flex-wrap items-center justify-center font-semibold tracking-tighter text-xl md:text-3xl leading-[1.1]">
+                <div className="w-full self-center flex flex-wrap items-center justify-center font-semibold tracking-tighter text-xl md:text-3xl leading-[1.1] statement">
                     {words.map((word, i) => {
                         const start = i / words.length;
                         const end = start + 1 / words.length;

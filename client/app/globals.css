@@ -121,3 +121,25 @@ html.dark {
   }
 }
 
+@media (max-height: 800px) and (min-width: 800px) {
+  .statement {
+    @apply !text-xl !pb-20;
+  }
+
+  .intro-text {
+    @apply !text-lg;
+  }
+
+  .intro-button {
+    @apply !py-2;
+  }
+
+  .intro-pill {
+    @apply !p-3;
+  }
+
+  .intro-image {
+    @apply !size-20;
+  }
+
+}
